@@ -1293,6 +1293,7 @@
                 this.rightCalendar.month.date(this.rightCalendar.month.daysInMonth());
             }
             this.updateCalendars();
+            this.element.focus();
         },
 
         clickNext: function (e) {
@@ -1307,6 +1308,7 @@
                 this.rightCalendar.month.date(this.rightCalendar.month.daysInMonth());
             }
             this.updateCalendars();
+            this.element.focus();
         },
 
         hoverDate: function (e) {
@@ -1511,6 +1513,7 @@
                     this.leftCalendar.month = this.rightCalendar.month.clone().subtract(1, 'month');
             }
             this.updateCalendars();
+            this.element.focus();
         },
 
         timeChanged: function (e) {
@@ -1554,6 +1557,7 @@
 
             //update the calendars so all clickable dates reflect the new time component
             this.updateCalendars();
+            this.element.focus();
 
             //update the form inputs above the calendars with the new time
             this.updateFormInputs();
